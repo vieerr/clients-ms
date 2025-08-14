@@ -1,0 +1,8 @@
+com/saintroche/clients/service/ClientService.class
+com/saintroche/clients/exceptions/ValidationExceptionHandler.class
+com/saintroche/clients/controllers/ClientController.class
+com/saintroche/clients/repositories/ClientRepository.class
+com/saintroche/clients/service/ClientServiceImp.class
+com/saintroche/clients/models/entities/Client.class
+com/saintroche/clients/ClientsApplication.class
+com/saintroche/clients/repositories/ClientRepository$ClientWithoutPassword.class
