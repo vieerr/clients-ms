@@ -1,7 +1,0 @@
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/ClientsApplication.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/controllers/ClientController.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/exceptions/ValidationExceptionHandler.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/models/entities/Client.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/repositories/ClientRepository.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/service/ClientService.java
-/home/vier/dev/the-armory-bd/clients-ms/src/main/java/com/saintroche/clients/service/ClientServiceImp.java
