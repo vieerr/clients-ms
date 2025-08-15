@@ -30,7 +30,10 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
     }
 
     @Query("SELECT c FROM Client c WHERE c.email = :email")
-    Optional<ClientWithoutPassword> findByEmail(@Param("email") String email);
+    Optional<ClientWithoutPassword> findClientByEmailWithoutPassword(@Param("email") String email);
+
+    @Query("SELECT c FROM Client c WHERE c.email = :email")
+    Optional<Client> findByEmail(String email);
 
     @Query("update Client c set c.active = false where c.id = :userId")
     @Modifying

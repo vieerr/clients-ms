@@ -16,7 +16,11 @@ public interface ClientService {
 
     Client updateClient(Long id, Client client);
 
-    Optional<ClientRepository.ClientWithoutPassword> getClientByEmail(String email);
+    Optional<Client> getClientByEmail(String email);
+
+    Optional<ClientRepository.ClientWithoutPassword> getCurrentClientFromToken(String token);
+
+    Optional<ClientRepository.ClientWithoutPassword> getClientByEmailWithoutPw(String email);
 
     void deleteClient(Long id);
 

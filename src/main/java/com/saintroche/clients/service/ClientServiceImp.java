@@ -67,8 +67,25 @@ public class ClientServiceImp implements ClientService {
     }
 
     @Override
-    public Optional<ClientRepository.ClientWithoutPassword> getClientByEmail(String email) {
+    public Optional<Client> getClientByEmail(String email) {
         return clientRepository.findByEmail(email);
+    }
+
+    @Override
+    public Optional<ClientRepository.ClientWithoutPassword> getCurrentClientFromToken(String token) {
+
+        try {
+            JwtService jwtService = new JwtService();
+            String email = jwtService.getEmailFromToken(token);
+            return clientRepository.findClientByEmailWithoutPassword(email);
+        } catch (Exception e) {
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public Optional<ClientRepository.ClientWithoutPassword> getClientByEmailWithoutPw(String email) {
+        return clientRepository.findClientByEmailWithoutPassword(email);
     }
 
     // @Override
